@@ -4,6 +4,7 @@ import {HomePageComponent} from './components/home-page/home-page.component';
 import { DepoimentosPageComponent } from './components/depoimentos-page/depoimentos-page.component';
 import { MenuTemplateComponent } from './components/menu-template/menu-template.component';
 import { LeisPaginaComponent } from './components/leis-pagina/leis-pagina.component';
+import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'leis',
         component: LeisPaginaComponent
+      },
+      {
+        path: 'ajuda',
+        component: AjudaPageComponent
       }
     ]
   }];
