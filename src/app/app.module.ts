@@ -12,7 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { DepoimentosComponent } from './components/depoimentos/depoimentos.component';
+import { DepoimentosPageComponent } from './components/depoimentos-page/depoimentos-page.component';
 import { LeisPaginaComponent } from './components/leis-pagina/leis-pagina.component';
 import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component';
 
@@ -21,7 +21,7 @@ import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component
     AppComponent,
     MenuTemplateComponent,
     HomePageComponent,
-    DepoimentosComponent,
+    DepoimentosPageComponent,
     LeisPaginaComponent,
     AjudaPageComponent
   ],
