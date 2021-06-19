@@ -17,7 +17,7 @@ export class DepoimentosPageComponent implements OnInit {
 
     const depoimento = new DepoimentoModel();
     depoimento.texto =
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tortor eu  odio pellentesque ullamcorper. Duis non ipsum mauris. Nullam dolor dui';
+      'Denunciar é preciso. Sofri violência por 5 anos e era privada de ir na casa da minha família. A delegacia de onde moro foi muito acolhedora e consegui medida preventiva do meu ex-marido. Estou mais feliz e já estou com alguém que me respeita, ama e valoriza.';
     depoimento.nome = 'Ana Pires';
     depoimento.cidade = 'Goiânia';
     depoimento.estado = 'GO';
@@ -25,7 +25,7 @@ export class DepoimentosPageComponent implements OnInit {
 
     const depoimento2 = new DepoimentoModel();
     depoimento2.texto =
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tortor eu  odio pellentesque ullamcorper. Duis non ipsum mauris. Nullam dolor dui';
+      'Conhecer meus direitos mudou minha percepção do combate à violência contra a mulher. Minha vizinha sofria ameaças do namorado, mas não tinha coragem de fazer a denúncia. Eu fiz por ela e conseguimos superar essa situação terrível juntas. Hoje ela vive bem com o filho em outro estado e o agressor atrás das grades.';
     depoimento2.nome = 'Bete Cardoso';
     depoimento2.cidade = 'São Paulo';
     depoimento2.estado = 'SP';
@@ -36,7 +36,7 @@ export class DepoimentosPageComponent implements OnInit {
 
   adicionarDepoimento(texto: string, nome: string, cidade: string, estado: string): void {
     this.newDepoimento.texto = texto;
-    this.newDepoimento.nome = nome;
+    this.newDepoimento.nome = nome || 'Anônima(o)';
     this.newDepoimento.cidade = cidade;
     this.newDepoimento.estado = estado;
     this.listaDepoimentos.push(this.newDepoimento);
