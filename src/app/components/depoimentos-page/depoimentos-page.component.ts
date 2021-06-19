@@ -36,7 +36,7 @@ export class DepoimentosPageComponent implements OnInit {
 
   adicionarDepoimento(texto: string, nome: string, cidade: string, estado: string): void {
     this.newDepoimento.texto = texto;
-    this.newDepoimento.nome = nome;
+    this.newDepoimento.nome = nome || 'Anônima(o)';
     this.newDepoimento.cidade = cidade;
     this.newDepoimento.estado = estado;
     this.listaDepoimentos.push(this.newDepoimento);
