@@ -41,5 +41,4 @@ export class DepoimentosPageComponent implements OnInit {
     this.newDepoimento.estado = estado;
     this.listaDepoimentos.push(this.newDepoimento);
   }
-
 }
