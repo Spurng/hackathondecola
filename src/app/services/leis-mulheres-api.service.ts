@@ -9,7 +9,7 @@ import { LeisMulheresApiModel } from './leis-mulheres-api-model';
 export class LeisMulheresApiService {
 
   constructor(private http: HttpClient) { }
-    private apiUrl = 'https://treinamentodecola-default-rtdb.firebaseio.com/imoveis.json';
+    private apiUrl = 'https://it3-klj-default-rtdb.firebaseio.com/leisMulheres.json';
 ​
    public get(): Observable<LeisMulheresApiModel[]> {
     return this.http.get<LeisMulheresApiModel[]>(this.apiUrl);
