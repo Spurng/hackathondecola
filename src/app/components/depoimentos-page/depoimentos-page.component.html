@@ -1,1 +1,17 @@
-<p>depoimentos-page works!</p>
+<section>
+  <h2>Adicionar depoimento</h2>
+  <div>
+    <input type="text" [(ngModel)]="newDepoimento.nome" placeholder="Nome (Não coloque se quiser anonimato)" />
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newDepoimento.cidade" placeholder="Cidade" />
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="newDepoimento.estado" placeholder="Estado" />
+  </div>
+  <div>
+    <textarea [(ngModel)]="newDepoimento.texto" placeholder="Texto do depoimento"></textarea>
+  </div>
+  <button class="share" (click)="adicionarDepoimento(newDepoimento.texto, newDepoimento.nome, newDepoimento.cidade, newDepoimento.estado)">Adicionar</button>
+</section>
+<app-depoimento-card *ngFor="let item of listaDepoimentos" [depoimento]="item"></app-depoimento-card>
