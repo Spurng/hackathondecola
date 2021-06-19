@@ -13,8 +13,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { DepoimentosPageComponent } from './components/depoimentos-page/depoimentos-page.component';
+import { DepoimentoCardComponent } from './components/depoimento-card/depoimento-card.component';
 import { LeisPaginaComponent } from './components/leis-pagina/leis-pagina.component';
 import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component';
+import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component
     MenuTemplateComponent,
     HomePageComponent,
     DepoimentosPageComponent,
+    DepoimentoCardComponent,
     LeisPaginaComponent,
     AjudaPageComponent
   ],
@@ -34,7 +38,10 @@ import { AjudaPageComponent } from './components/ajuda-page/ajuda-page.component
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    BrowserModule,
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
