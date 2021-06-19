@@ -1,0 +1,25 @@
+body {
+
+
+}
+
+#ajudawhats
+ {
+   background-color: red;
+   color: white;
+   font-weight: bold;
+ }
+
+.titulo {
+
+}
+
+#id {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  width: 50vh;
+  max-width: 100%;
+}
