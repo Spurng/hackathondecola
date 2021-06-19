@@ -1,3 +1,15 @@
+<div
+  style="background-color: #3f51b5;
+  display: flex;
+  justify-content: center;
+">
+<h1 style="color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+">
+ Depoimentos</h1>
+</div>
+
+<app-depoimento-card *ngFor="let item of listaDepoimentos" [depoimento]="item"></app-depoimento-card>
 <section>
   <h2>Adicionar depoimento</h2>
   <div>
@@ -14,4 +26,3 @@
   </div>
   <button class="share" (click)="adicionarDepoimento(newDepoimento.texto, newDepoimento.nome, newDepoimento.cidade, newDepoimento.estado)">Adicionar</button>
 </section>
-<app-depoimento-card *ngFor="let item of listaDepoimentos" [depoimento]="item"></app-depoimento-card>

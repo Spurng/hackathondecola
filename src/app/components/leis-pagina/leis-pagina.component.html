@@ -1,5 +1,5 @@
 <div
-  style="background-color: blueviolet;
+  style="background-color: #3f51b5;
   display: flex;
   justify-content: center;
 ">
@@ -8,15 +8,16 @@ font-family: Arial, Helvetica, sans-serif;
 ">
  Veja seus direitos </h1>
 </div>
-<h4 style="font-family: Arial, Helvetica, sans-serif;">Certifique-se de que está vivendo em sociedade sem passar por algo que não deveria, <br>seja isso um problema dentro de casa, <br>ou até mesmo assédio sexual no trabalho.</h4>
-<h4 style="font-family: Arial, Helvetica, sans-serif;"></h4>
-<h4 style="font-family: Arial, Helvetica, sans-serif;"></h4>
+<h4 style="font-family: Arial, Helvetica, sans-serif;">
+  Certifique-se de que está vivendo em sociedade sem passar por algo que não deveria, <br>
+  seja isso um problema dentro de casa, <br>
+  ou até mesmo assédio sexual no trabalho.</h4>
 <br>
 <hr>
-<h3 style="font-family: Arial, Helvetica, sans-serif;">Veja algumas leis que podem ajudar a manter seus direitos:</h3>
+<h3 style="font-family: Arial, Helvetica, sans-serif;"><b>Veja algumas leis que podem ajudar a manter seus direitos:</b></h3>
 
 
-<a target="_blank" href= {{apiLeis[0]?.site}} > {{apiLeis[0]?.nome}} </a>
+<a  target="_blank" href= {{apiLeis[0]?.site}} > {{apiLeis[0]?.nome}} </a>
 <br><p > {{apiLeis[0]?.descricao}} </p><p > {{apiLeis[0]?.data}} </p>
 <br>
 <a target="_blank" href= {{apiLeis[1]?.site}} > {{apiLeis[1]?.nome}} </a>
@@ -31,3 +32,4 @@ font-family: Arial, Helvetica, sans-serif;
 <a target="_blank" href= {{apiLeis[4]?.site}} > {{apiLeis[4]?.nome}} </a>
 <br><p > {{apiLeis[4]?.descricao}} </p><p > {{apiLeis[4]?.data}} </p>
 <br>
+
