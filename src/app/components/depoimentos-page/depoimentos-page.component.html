@@ -1,7 +1,7 @@
 <section>
-  <h2>Adicionar postagem</h2>
+  <h2>Adicionar depoimento</h2>
   <div>
-    <input type="text" [(ngModel)]="newDepoimento.nome" placeholder="Nome" />
+    <input type="text" [(ngModel)]="newDepoimento.nome" placeholder="Nome (Não coloque se quiser anonimato)" />
   </div>
   <div>
     <input type="text" [(ngModel)]="newDepoimento.cidade" placeholder="Cidade" />
@@ -14,5 +14,4 @@
   </div>
   <button class="share" (click)="adicionarDepoimento(newDepoimento.texto, newDepoimento.nome, newDepoimento.cidade, newDepoimento.estado)">Adicionar</button>
 </section>
-
-<app-depoimentos-page *ngFor="let item of listaDepoimentos" [newDepoimento]="item"></app-depoimentos-page>
+<app-depoimento-card *ngFor="let item of listaDepoimentos" [depoimento]="item"></app-depoimento-card>
